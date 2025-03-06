@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="2_4scanf" targetName="2_4scanf" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7768498-c407-407b-92a2-aec73dfe4ffc" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/OJ_practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chapter1/1.1/.idea/1.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/chapter2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/.cmake/api/v1/reply/cache-v2-8a187cb2f4b18b3fb166.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-27464325f46e6d2895f6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-842efa59e8cd60f6b32e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/.cmake/api/v1/reply/index-2025-03-06T02-36-51-0740.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/.cmake/api/v1/reply/target-chapter2-Debug-bfce8cb67cdc24f03d51.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-bed5d5e46dfbe2736c01.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/3.30.5/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/3.30.5/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.1symbolic_construct/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.2cast/.idea/2.2cast.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.2cast/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.2cast/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.2cast/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.2cast/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.2cast/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.2cast/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.3base_conversion/.idea/2.3base_conversion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.3base_conversion/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.3base_conversion/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.3base_conversion/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.3base_conversion/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.3base_conversion/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.3base_conversion/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="3.1.1" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2tvWySyrQJRG47s0RIYMdDwe1O6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake 应用程序.2_4scanf.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="2_4scanf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="2_4scanf" TARGET_NAME="2_4scanf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="2_4scanf" RUN_TARGET_NAME="2_4scanf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e7768498-c407-407b-92a2-aec73dfe4ffc" name="更改" comment="" />
+      <created>1741233282908</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741233282908</updated>
+      <workItem from="1741233284067" duration="2809000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
