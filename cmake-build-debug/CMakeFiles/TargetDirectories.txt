@@ -1,3 +1,0 @@
-D:/repository/OJ_practice/cmake-build-debug/CMakeFiles/OJ_practice.dir
-D:/repository/OJ_practice/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/repository/OJ_practice/cmake-build-debug/CMakeFiles/rebuild_cache.dir

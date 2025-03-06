@@ -1,6 +1,0 @@
-# ninja log v6
-2	337	7617616833894760	build.ninja	f2037bfabee763b3
-0	456	7617599580739994	CMakeFiles/OJ_practice.dir/a+b_problem.cpp.obj	685bd8d1d743f50
-2	464	7617612293848918	CMakeFiles/OJ_practice.dir/enumerate.cpp.obj	1ab80be4e57acd67
-3	418	7617616864314360	CMakeFiles/OJ_practice.dir/enumerate.cpp.obj	1ab80be4e57acd67
-418	544	7617616868468002	OJ_practice.exe	d9c9ea01faf69d55
