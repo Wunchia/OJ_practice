@@ -82,6 +82,7 @@ void PosDelete(LinkList &L,int pos){
     }
     pre->next=cur->next;
     free(cur);
+    cur=NULL;
 }
 
 int main(){
