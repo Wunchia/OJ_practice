@@ -14,7 +14,7 @@ void Inorder(BST T,int *A){
     static int i=0;
     if(T!=NULL){
         Inorder(T->lchild,A);
-        printf("%3d ",T->data);
+        printf("%3d",T->data);
         A[i++]=T->data;
         Inorder(T->rchild,A);
     }
