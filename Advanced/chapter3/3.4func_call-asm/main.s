@@ -39,52 +39,66 @@
  # -mvzeroupper
 
 	.text
+	.globl	_add
+	.def	_add;	.scl	2;	.type	32;	.endef
+_add:
+	push	ebp	 #
+	mov	ebp, esp	 #，
+	sub	esp, 16	 #给add函数分配16字节的栈空间,
+ # main.c:4:     ret=a+b;
+	mov	edx, DWORD PTR [ebp+8]	 # tmp93, a，返回地址和main的ebp占用了8个字节，所以+8
+	mov	eax, DWORD PTR [ebp+12]	 # tmp94, b，a又占用了4个字节，所以+12
+	add	eax, edx	 # tmp92, tmp93
+	mov	DWORD PTR [ebp-4], eax	 # ret, tmp92，将eax的值放到ebp-4中，ret的值
+ # main.c:5:     return ret;
+	mov	eax, DWORD PTR [ebp-4]	 # _4, ret ，将ebp-4的值放到eax中
+ # main.c:6: }
+	leave	
+	ret	#回到调用函数的地方（在call函数时保存的栈顶指针）
+	# ret所做的工作 ：
+	# mov esp,ebp 将ebp放入esp，此时esp指向了调用函数（main）的栈顶指针
+	# pop ebp 将ebp弹栈，恢复ebp的值
 	.def	___main;	.scl	2;	.type	32;	.endef
 	.section .rdata,"dr"
 LC0:
-	.ascii "i is small\0"
-LC1:
-	.ascii "this is loop\0"
+	.ascii "add result=%d\12\0"
 	.text
 	.globl	_main
 	.def	_main;	.scl	2;	.type	32;	.endef
 _main:
 	push	ebp	 #
-	mov	ebp, esp	 #,
-	and	esp, -16	 #,
-	sub	esp, 32	 #,
- # main.c:3: int main() {
+	mov	ebp, esp	 #保存esp的值到栈中，ebp指向被调用函数（main）栈底
+	and	esp, -16	 #,对齐栈空间，栈空间必须是16的倍数
+	sub	esp, 32	 #分配32字节的栈空间
+ # main.c:8: int main() {
 	call	___main	 #
- # main.c:4:     int i=5;
-	mov	DWORD PTR [esp+28], 5	 # i,
- # main.c:5:     int j=10;
-	mov	DWORD PTR [esp+24], 10	 # j,
- # main.c:6:     if(i<j){
-	mov	eax, DWORD PTR [esp+28]	 # tmp89, i
-	cmp	eax, DWORD PTR [esp+24]	 # tmp89, j  比较后设置条件码
-	jge	L2	 #根据条件码判断，大于等于则跳转至L2,根据ZF，SF来判断
- # main.c:7:         printf("i is small\n");
-	mov	DWORD PTR [esp], OFFSET FLAT:LC0	 #将字符串常量LC0的地址放入栈顶,
-	call	_puts	 #输出
-L2:
- # main.c:9:     for(i=0;i<5;i++){
-	mov	DWORD PTR [esp+28], 0	 # i,
- # main.c:9:     for(i=0;i<5;i++){
-	jmp	L3	 #无条件转移到L3
-L4:
- # main.c:10:         printf("this is loop\n");
-	mov	DWORD PTR [esp], OFFSET FLAT:LC1	 #将字符串常量LC1的地址放入栈顶,
-	call	_puts	 #
- # main.c:9:     for(i=0;i<5;i++){
-	add	DWORD PTR [esp+28], 1	 # i+1,
-L3:
- # main.c:9:     for(i=0;i<5;i++){
-	cmp	DWORD PTR [esp+28], 4	 # 比较i和4,
-	jle	L4	 #,
- # main.c:12:     return 0;
-	mov	eax, 0	 # _11,
- # main.c:13: }
+ # main.c:11:     a=5;
+	mov	DWORD PTR [esp+16], 5	 # a,
+ # main.c:12:     p=&a;
+	lea	eax, [esp+16]	 # tmp91,定义指针，把a的地址放到 eax 中
+	mov	DWORD PTR [esp+28], eax	 # p, tmp91，将eax的值放到p中
+ # main.c:13:     b=*p+2;
+	mov	eax, DWORD PTR [esp+28]	 # tmp92, p，将p的值放到eax中
+	mov	eax, DWORD PTR [eax]	 # _1, *p_5，将p指向的内存空间的值放到eax中
+ # main.c:13:     b=*p+2;
+	add	eax, 2	 # tmp93,运算eax+2
+	mov	DWORD PTR [esp+24], eax	 # b, tmp93，将算好的值放到b中
+ # main.c:14:     ret=add(a,b);函数调用
+	mov	eax, DWORD PTR [esp+16]	 # a.0_2, a，
+	mov	edx, DWORD PTR [esp+24]	 # tmp94, b
+	mov	DWORD PTR [esp+4], edx	 #, tmp94，将b的值放到esp+4中，传参
+	mov	DWORD PTR [esp], eax	 #, a.0_2，将a的值放到esp中，传参
+	call	_add	 #调用函数_add
+	mov	DWORD PTR [esp+20], eax	 # ret, tmp95，从eax中取出返回值放到esp+20中，在add函数中最后一步已将返回值放到eax中
+ # main.c:15:     printf("add result=%d\n",ret);
+	mov	eax, DWORD PTR [esp+20]	 # tmp96, ret
+	mov	DWORD PTR [esp+4], eax	 #, tmp96 #准备printf的参数
+	mov	DWORD PTR [esp], OFFSET FLAT:LC0	 #,
+	call	_printf	 #
+ # main.c:16:     return 0;
+	mov	eax, 0	 # _10,
+ # main.c:17: }
 	leave	
 	ret	
 	.ident	"GCC: (x86_64-posix-seh-rev0, Built by MinGW-W64 project) 8.1.0"
-	.def	_puts;	.scl	2;	.type	32;	.endef
+	.def	_printf;	.scl	2;	.type	32;	.endef
