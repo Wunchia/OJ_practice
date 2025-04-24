@@ -1,0 +1,3 @@
+D:/repository/OJ_practice/Advanced/chapter5/5.2client/cmake-build-debug/CMakeFiles/5_2client.dir
+D:/repository/OJ_practice/Advanced/chapter5/5.2client/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/repository/OJ_practice/Advanced/chapter5/5.2client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
