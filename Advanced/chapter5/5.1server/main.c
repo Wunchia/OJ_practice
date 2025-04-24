@@ -3,6 +3,13 @@
 #include <stdio.h>
 #include <winsock2.h>
 #include <windows.h>
+
+//socket
+//bind
+//listen
+//accept
+//recv send
+//close
 int main(int argc,char *argv[]) {
     //初始化WSA，加载Winsock库
     WORD sockVersion= MAKEWORD(2,2);
