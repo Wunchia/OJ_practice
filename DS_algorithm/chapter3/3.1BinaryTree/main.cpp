@@ -120,8 +120,8 @@ void LevelOrder(BTree T){
 
 int main(){
     BTree T;
-//    InitBTree1(T);
-    InitBTree2(T);
+    InitBTree1(T);
+//    InitBTree2(T);
     printf("----pre order----\n");
     PreOrder(T);
     printf("\n----mid order----\n");
