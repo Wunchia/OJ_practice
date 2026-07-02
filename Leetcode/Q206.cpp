@@ -1,11 +1,26 @@
-#include <iostream>
-using std::cin;
-using std::cout;
-using std::endl;
+// Definition for singly-linked list.
+ struct ListNode {
+     int val;
+     ListNode *next;
+     ListNode() : val(0), next(nullptr) {}
+     ListNode(int x) : val(x), next(nullptr) {}
+     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ };
 
-int main(int argc,char *argv[])
-{
-    
-    return 0;
-}
-
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if(head==nullptr||head->next==nullptr){
+            return head;
+        }
+        ListNode* pre=head;
+        ListNode* cur=head->next;
+        while(cur!=nullptr){
+            pre->next=cur->next;
+            cur->next=head;
+            head=cur;
+            cur=pre->next;
+        }
+        return head;
+    }
+};
