@@ -1,0 +1,26 @@
+# 一个 BUILD.bazel 文件定义当前目录（包）里的所有构建目标。
+cc_library(
+    name = "greeting",
+    srcs = ["greeting.cc"],
+    hdrs = ["greeting.h"],
+)
+
+cc_binary(
+    name = "hello",
+    srcs = ["main.cc"],
+    deps = [":greeting"],
+)
+
+cc_test(
+    name = "greeting_test",
+    srcs = ["greeting_test.cc"],
+    deps = [":greeting"],
+)
+
+# 演示非 C++ 文件如何通过一条构建动作生成新产物。
+genrule(
+    name = "uppercase_message",
+    srcs = ["message.txt"],
+    outs = ["message_upper.txt"],
+    cmd = "tr '[:lower:]' '[:upper:]' < $(location message.txt) > $@",
+)

@@ -1,0 +1,1 @@
+Bazel turns source files into build outputs.
