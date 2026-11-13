@@ -35,7 +35,7 @@ bazel build //:hello //:uppercase_message
 ./bazel-bin/hello
 cat bazel-bin/message_upper.txt
 bazel build //:greeting                # 单独构建库
-ls bazel-bin/libgreeting.a             # 本例 Linux 常见工具链下的静态库
+find bazel-bin -maxdepth 1 -name 'libgreeting*'  # 查看库产物；扩展名依工具链而定
 bazel info bazel-bin
 bazel info output_base
 ```
